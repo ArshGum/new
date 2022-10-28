@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shenaz Auto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="img/Shenaz1.png" class="logo">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#Latest">Latest</a></li>
+                <li><a href="#Contact Me">Contact Me</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="Home" class="content">
+        <h1>BUY YOUR DREAM CAR</h1>
+        <P>Senior Car Sales Rep with 7 plus years of experience in the Automobiles domain <br> dedicated to helping you purchase your dream car!</P>
+        <div>
+            <button type="button"> <span></span> ABOUT ME</button>
+            <button href="#Contact Me"> <span></span>CONTACT ME</button>
+        </div>
+    </div>
+    
+
+    <div id="Latest" class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/car1.jpeg" alt=""></div>
+              <div class="swiper-slide"><img src="img/car2.jpeg" alt=""></div>
+              <div class="swiper-slide"><img src="img/car4.jpeg" alt=""></div>
+              <div class="swiper-slide"><img src="img/car5.jpeg" alt=""></div>
+              <div class="swiper-slide"><img src="img/car6.jpeg" alt=""></div>
+              <div class="swiper-slide"><img src="img/car7.jpeg" alt=""></div>
+              <div class="swiper-slide"><img src="img/car11.jpeg" alt=""></div>
+              <div class="swiper-slide"><img src="img/car15.jpeg" alt=""></div>
+              <div class="swiper-slide"><img src="img/car10.jpeg" alt=""></div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+    </div>
+
+  <!---- Contact--->
+
+  <div id="Contact Me"  class="containerr">
+    <div class="content-box">
+      <div class="left"></div>
+      <div class="right">
+        <h3>Contact Me</h3>
+        <input type="text" class="field" placeholder="Your Name">
+        <input type="email" class="field" placeholder="Your Email">
+        <input type="text" class="field" placeholder="Your Phone">
+        <textarea class="field area" placeholder="Message"></textarea>
+        <button class="btn">Send</button>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+
+const swiper = new Swiper('.swiper', {
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+
+  
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+});
+
+    </script>
+    
+</body>
+</html>
